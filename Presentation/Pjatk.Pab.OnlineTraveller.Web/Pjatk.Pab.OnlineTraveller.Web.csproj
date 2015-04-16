@@ -118,6 +118,12 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Pjatk.Pab.OnlineTraveller.Application\Pjatk.Pab.OnlineTraveller.Application.csproj">
+      <Project>{96d5c2b0-0470-49c5-af33-51b5270b1bf7}</Project>
+      <Name>Pjatk.Pab.OnlineTraveller.Application</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
