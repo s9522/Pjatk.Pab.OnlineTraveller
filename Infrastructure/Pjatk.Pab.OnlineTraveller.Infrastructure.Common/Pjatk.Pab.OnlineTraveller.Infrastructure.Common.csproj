@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C53D9DF5-B4CE-4235-A6AF-051687D19FAD}</ProjectGuid>
+    <ProjectGuid>{6358A1BD-A2B8-46BF-B47F-EE3817F5AD41}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pjatk.Pab.OnlineTraveller.Infrastructure</RootNamespace>
-    <AssemblyName>Pjatk.Pab.OnlineTraveller.Infrastructure</AssemblyName>
+    <RootNamespace>Pjatk.Pab.OnlineTraveller.Infrastructure.Common</RootNamespace>
+    <AssemblyName>Pjatk.Pab.OnlineTraveller.Infrastructure.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,8 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NLog">
+      <HintPath>..\..\packages\NLog.3.2.0.0\lib\net45\NLog.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,13 +46,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Presentation\Pjatk.Pab.OnlineTraveller.Web\Pjatk.Pab.OnlineTraveller.Web.csproj">
-      <Project>{3e36f2b5-7c70-47c3-b0be-3dab8cc82f8b}</Project>
-      <Name>Pjatk.Pab.OnlineTraveller.Web</Name>
-    </ProjectReference>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
