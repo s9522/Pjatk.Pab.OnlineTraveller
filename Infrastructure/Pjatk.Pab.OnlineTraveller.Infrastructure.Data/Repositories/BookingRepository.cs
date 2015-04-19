@@ -1,9 +1,8 @@
 ﻿using System.Data.Entity;
 using Pjatk.Pab.OnlineTraveller.Core.Domain.Entities;
 using Pjatk.Pab.OnlineTraveller.Core.Interfaces.Repositories;
-using Pjatk.Pab.OnlineTraveller.Infrastructure.Data.Repositories;
 
-namespace Pjatk.Pab.OnlineTraveller.Infrastructure.Data
+namespace Pjatk.Pab.OnlineTraveller.Infrastructure.Data.Repositories
 {
     public class BookingRepository : GenericRepository<Booking>, IBookingRepository
     {

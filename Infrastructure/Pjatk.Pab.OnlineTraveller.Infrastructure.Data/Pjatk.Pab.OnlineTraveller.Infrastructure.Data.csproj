@@ -46,8 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookingRepository.cs" />
+    <Compile Include="EntityFramework\MainDbContext.cs" />
+    <Compile Include="EntityFramework\MainDbInitializer.cs" />
+    <Compile Include="EntityFramework\TestDbInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BookingRepository.cs" />
     <Compile Include="Repositories\ClientRepository.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
     <Compile Include="Repositories\PaymentRepository.cs" />
