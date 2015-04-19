@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pjatk.Pab.OnlineTraveller.I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pjatk.Pab.OnlineTraveller.Infrastructure.Auth", "Infrastructure\Pjatk.Pab.OnlineTraveller.Infrastructure.Auth\Pjatk.Pab.OnlineTraveller.Infrastructure.Auth.csproj", "{78C2F012-3F61-42E6-A455-27E218F31290}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pjatk.Pab.OnlineTraveller.IntegrationTests", "Tests\Pjatk.Pab.OnlineTraveller.IntegrationTests\Pjatk.Pab.OnlineTraveller.IntegrationTests.csproj", "{C14CD7F7-334C-4177-8C92-40B9F745A1A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,14 @@ Global
 		{78C2F012-3F61-42E6-A455-27E218F31290}.Release|Any CPU.Build.0 = Release|Any CPU
 		{78C2F012-3F61-42E6-A455-27E218F31290}.Release|ARM.ActiveCfg = Release|Any CPU
 		{78C2F012-3F61-42E6-A455-27E218F31290}.Release|x86.ActiveCfg = Release|Any CPU
+		{C14CD7F7-334C-4177-8C92-40B9F745A1A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C14CD7F7-334C-4177-8C92-40B9F745A1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C14CD7F7-334C-4177-8C92-40B9F745A1A4}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C14CD7F7-334C-4177-8C92-40B9F745A1A4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C14CD7F7-334C-4177-8C92-40B9F745A1A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C14CD7F7-334C-4177-8C92-40B9F745A1A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C14CD7F7-334C-4177-8C92-40B9F745A1A4}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C14CD7F7-334C-4177-8C92-40B9F745A1A4}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,5 +147,6 @@ Global
 		{D875C8C0-5152-468D-9630-0B7C81CD3C9D} = {613288F4-BD1E-463C-8CEC-5EFDC9D0AA6E}
 		{62BFB267-8CC7-4F58-A256-830AD79187DE} = {613288F4-BD1E-463C-8CEC-5EFDC9D0AA6E}
 		{78C2F012-3F61-42E6-A455-27E218F31290} = {613288F4-BD1E-463C-8CEC-5EFDC9D0AA6E}
+		{C14CD7F7-334C-4177-8C92-40B9F745A1A4} = {A284F3A9-D5EC-4254-B4F3-0E3B712FF266}
 	EndGlobalSection
 EndGlobal
