@@ -49,10 +49,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContainerBootsrapper.cs" />
+    <Compile Include="Modules\RepositoriesModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Pjatk.Pab.OnlineTraveller.Core\Pjatk.Pab.OnlineTraveller.Core.csproj">
+      <Project>{ed122151-cb9a-400d-8c9a-0d14993c751d}</Project>
+      <Name>Pjatk.Pab.OnlineTraveller.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pjatk.Pab.OnlineTraveller.Infrastructure.Auth\Pjatk.Pab.OnlineTraveller.Infrastructure.Auth.csproj">
+      <Project>{78c2f012-3f61-42e6-a455-27e218f31290}</Project>
+      <Name>Pjatk.Pab.OnlineTraveller.Infrastructure.Auth</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pjatk.Pab.OnlineTraveller.Infrastructure.Common\Pjatk.Pab.OnlineTraveller.Infrastructure.Common.csproj">
+      <Project>{6358a1bd-a2b8-46bf-b47f-ee3817f5ad41}</Project>
+      <Name>Pjatk.Pab.OnlineTraveller.Infrastructure.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pjatk.Pab.OnlineTraveller.Infrastructure.Data\Pjatk.Pab.OnlineTraveller.Infrastructure.Data.csproj">
+      <Project>{d875c8c0-5152-468d-9630-0b7c81cd3c9d}</Project>
+      <Name>Pjatk.Pab.OnlineTraveller.Infrastructure.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
