@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,14 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Entities\EntityBase.cs" />
+    <Compile Include="Interfaces\IAggregateRoot.cs" />
+    <Compile Include="Interfaces\Repositories\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\Repositories\IGenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Domain\Entities\" />
     <Folder Include="Domain\Factories\" />
     <Folder Include="Domain\Services\" />
     <Folder Include="Domain\ValueObjects\" />
-    <Folder Include="Interfaces\Repositories\" />
     <Folder Include="Interfaces\Services\Application\Domain\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
