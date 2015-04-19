@@ -40,8 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Entities\Booking.cs" />
+    <Compile Include="Domain\Entities\Client.cs" />
     <Compile Include="Domain\Entities\EntityBase.cs" />
+    <Compile Include="Domain\Entities\Payment.cs" />
+    <Compile Include="Domain\Entities\Travel.cs" />
+    <Compile Include="Domain\Entities\TravelOffer.cs" />
     <Compile Include="Interfaces\IAggregateRoot.cs" />
+    <Compile Include="Interfaces\Repositories\IBookingRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IClientRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IPaymentRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ITravelOfferRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ITravelRepository.cs" />
     <Compile Include="Interfaces\Repositories\IUnitOfWork.cs" />
     <Compile Include="Interfaces\Repositories\IGenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

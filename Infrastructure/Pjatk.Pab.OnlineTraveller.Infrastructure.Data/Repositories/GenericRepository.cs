@@ -10,7 +10,7 @@ using Pjatk.Pab.OnlineTraveller.Core.Domain.Entities;
 namespace Pjatk.Pab.OnlineTraveller.Infrastructure.Data.Repositories
 {
     public abstract class GenericRepository<T> : IGenericRepository<T>
-          where T : EntityBase<Guid>, IAggregateRoot
+          where T : EntityBase<int>, IAggregateRoot
     {
         protected DbContext _context;
         protected readonly IDbSet<T> _dbset;
